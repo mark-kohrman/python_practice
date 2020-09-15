@@ -70,5 +70,4 @@ y = 9
 
 # print(x + y)
 
-#CONDITIONALS
 
