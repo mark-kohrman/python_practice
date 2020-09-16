@@ -59,30 +59,31 @@
 ###############################
 # WRITE: Write code to ask the user for a day of the week (Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday). If the user enters Monday, print out the message "Sounds like someone has a case of the Mondays!". For any other weekday, print out the message "Time to make the Donuts!". For any weekend day, print out the message "It's the weekend. Enjoy it.". If the user did not enter a valid day, print out the message "That does not compute. Try again!"
 
-print("Please enter a day of the week:")
-day = input()
+# print("Please enter a day of the week:")
+# day = input()
 
-if day == "Monday":
-  print("Sounds like someone has a case of the Mondays")
-elif day == "Saturday" or day == "Sunday":
-  print("It's the weekend.  Enjoy it")
-elif day == "Tuesday" or day =="Wednesday" or day =="Thursday" or day == "Friday":
-  print("Time to make donuts!")
-else: 
-  print("That does not compute.  Try again!")
+# if day == "Monday":
+#   print("Sounds like someone has a case of the Mondays")
+# elif day == "Saturday" or day == "Sunday":
+#   print("It's the weekend.  Enjoy it")
+# elif day == "Tuesday" or day =="Wednesday" or day =="Thursday" or day == "Friday":
+#   print("Time to make donuts!")
+# else: 
+#   print("That does not compute.  Try again!")
 
 
 
-###################DEBUG
+# ###################DEBUG
 
-print("Welcome to The Matrix. Do you want to take the red pill or the blue pill?")
+# print("Welcome to The Matrix. Do you want to take the red pill or the blue pill?")
 
-pill = input()
+# pill = input()
 
-if pill == "red":
-  print("You took the red pill.")
-if pill == "blue":
-  print("You took the blue pill.")
+# if pill == "red":
+#   print("You took the red pill.")
+# if pill == "blue":
+#   print("You took the blue pill.")
+# 
 
 
 
