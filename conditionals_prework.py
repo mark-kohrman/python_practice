@@ -57,3 +57,53 @@
 
 # print(x)
 
+####5 
+# There are two mistakes with the code below. One mistake will cause the code to crash. The other mistake doesn’t cause the code to crash, but it is unnecessary code. Fix both mistakes.
+
+
+# x = 10
+# if x < 5:
+#   print(0) 
+# elif x < 100:
+#   print(2) 
+
+#### 6
+# abc = 30      
+# if abc > 45:   
+#   print(1)         
+#   if abc > 25:
+#     print(2) 
+
+# abc = 30      
+# if abc > 45:  
+#   print(1)
+
+# if abc > 25: 
+#   print(2)         
+
+####7    
+
+# bob = 30
+# if bob > 10:
+#   print(0)
+# else:
+#   print(1)
+
+####8 
+
+# WRITE: Use variables to store the ages of three different people. If all three people are older than 18, print 0. Otherwise, print 1.
+
+jeff = 33
+ana = 89
+joe = 18.5
+
+if (jeff > 18) and (ana > 18) and (joe > 18):
+    print(0)
+else:
+    print(1)
+
+
+
+
+
+
