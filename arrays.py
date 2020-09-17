@@ -136,16 +136,16 @@
 
 
 ####DEBUG: The following code starts with an array and creates a new array with only the small numbers.
-input_numbers = [3, 2, 10, 4, 23, 9]
-new_numbers = []
-index = 0
-while index < len(input_numbers):
-  if input_numbers[index] < 10:
-    new_numbers.append(input_numbers[index])
+# input_numbers = [3, 2, 10, 4, 23, 9]
+# new_numbers = []
+# index = 0
+# while index < len(input_numbers):
+#   if input_numbers[index] < 10:
+#     new_numbers.append(input_numbers[index])
   
-  index = index + 1
+#   index = index + 1
 
-print(new_numbers)
+# print(new_numbers)
 
 
 
