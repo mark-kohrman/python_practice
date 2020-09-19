@@ -53,15 +53,39 @@
 
 ##########
 # DEBUG: Fix the errors in the code below.
-def double(input_number):
-   print(input_number * 2)
+# def double(input_number):
+#    print(input_number * 2)
 
-double(3)
-double("four")
-double(5)
-double(6)
-double(8)
-double(9)
+# double(3)
+# double("four")
+# double(5)
+# double(6)
+# double(8)
+# double(9)
+
+############
+
+# Create a program that when you run it, prints the following:
+
+# 10
+# 9
+# 8
+# 7
+# 6
+# 5
+# 4
+# 3
+# 2
+# 1
+# 0
+# BLASTOFF!
+
+countdown = 10
+while countdown > 0:
+   print(countdown)
+   countdown -= 1
+
+print("BLASTOFF!")
 
 
 
