@@ -115,17 +115,33 @@
 
 # For this exercise, use interpolation
 
-print("Enter a noun to get started with your new story: ")
-noun1 = input()
-print("Enter a verb: ")
-verb1 = input()
-print("Enter an adjective")
-adjective1 = input()
-print("Enter another noun please: ")
-noun2 = input()
-print("Enter a verb to complete the story and print it: ")
-verb2 = input()
+# print("Enter a noun to get started with your new story: ")
+# noun1 = input()
+# print("Enter a verb: ")
+# verb1 = input()
+# print("Enter an adjective")
+# adjective1 = input()
+# print("Enter another noun please: ")
+# noun2 = input()
+# print("Enter a verb to complete the story and print it: ")
+# verb2 = input()
 
-print(f"I went to the store and saw a big {noun1}.  I {verb1} because it was so {adjective1} yet calming in a way.  Luckily I saw my {noun2}.  I knew then it would help if I {verb2} a taco.")
+# print(f"I went to the store and saw a big {noun1}.  I {verb1} because it was so {adjective1} yet calming in a way.  Luckily I saw my {noun2}.  I knew then it would help if I {verb2} a taco.")
 
+#########
 
+# Create program that multiplies by 2 until 100,000. That is, the program should print out:
+
+# 1
+# 2
+# 4
+# 8
+# 16
+# 32
+# 64
+# 128
+# etc... until you get above 100,000.
+number = 1
+while number < 100001:
+   print(number)
+   number *= 2
