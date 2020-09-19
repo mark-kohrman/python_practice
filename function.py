@@ -80,12 +80,30 @@
 # 0
 # BLASTOFF!
 
-countdown = 10
-while countdown > 0:
-   print(countdown)
-   countdown -= 1
+# countdown = 10
+# while countdown > 0:
+#    print(countdown)
+#    countdown -= 1
 
-print("BLASTOFF!")
+# print("BLASTOFF!")
+
+
+# Why waste your money on a human fortune teller when a computer can tell you your fortune for the same price?
+
+# Exercise:
+
+    
+# Create a fortune teller which tells the user a fortune based on the user's favorite number. Give at least 3 possible outcomes. So along these lines, for example: If the user's favorite number is below 50, give fortune X. If the user's favorite number is between 50 and 100, give fortune Y. If the user's favorite number is above 100, give fortune Z.
+
+print("Enter your favorite number to get your fortune:")
+number = int(input())
+
+if number < 25:
+   print("You will win the lottery pretty soon")
+elif number > 24 and number < 100:
+   print("You will have a normal life but won't win the lottery, which is fine because money doesn't buy happiness dude")
+else:
+   print("You will have a monkey as a pet")
 
 
 
