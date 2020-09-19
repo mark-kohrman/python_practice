@@ -140,8 +140,35 @@
 # 32
 # 64
 # 128
-# etc... until you get above 100,000.
-number = 1
-while number < 100001:
-   print(number)
-   number *= 2
+# # etc... until you get above 100,000.
+# number = 1
+# while number < 100001:
+#    print(number)
+#    number *= 2
+##########################
+
+
+
+# Exercise:
+
+    
+# Create a program that asks the user to enter 5 numbers. Then, tell the user the mean average of all the numbers.
+
+# The mean average is defined as the sum of all the numbers divided by the count of how many numbers there are. For example, if the user enters:
+
+# 11, 7, 30, 22, 55
+
+# the average will be 25. This is because 11 + 7 + 30 + 22 + 55 = 125, and 125 / 5 (the amount of numbers in the list) = 25.
+
+# Note: If you run the code p 9 / 2, it prints 4 even though the result should be 4.5. This is because when dividing integers in Ruby, the result will be an integer. If you want an answer with decimals, at least one of the numbers should be a decimal. If you run the code p 9 / 2.to_f, it prints 4.5 as you would expect. This is because the .to_f converts the integer to a floating point number which contains decimals.
+
+i = 0
+mean_list = []
+while i < 5:
+   print("Please enter a number and you will get the average of 5 numbers:")
+   number = int(input())
+   mean_list.append(number)
+   i += 1
+
+mean = sum(mean_list) / len(mean_list)
+print(f"The mean of the numbers you entered is {mean}")
