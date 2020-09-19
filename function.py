@@ -162,15 +162,33 @@
 
 # Note: If you run the code p 9 / 2, it prints 4 even though the result should be 4.5. This is because when dividing integers in Ruby, the result will be an integer. If you want an answer with decimals, at least one of the numbers should be a decimal. If you run the code p 9 / 2.to_f, it prints 4.5 as you would expect. This is because the .to_f converts the integer to a floating point number which contains decimals.
 
+# i = 0
+# sum = 0
+# mean_list = []
+# while i < 5:
+#    print("Please enter a number and you will get the average of 5 numbers:")
+#    number = int(input())
+#    mean_list.append(number)
+#    sum += number
+#    i += 1
+
+# mean = sum / len(mean_list)
+# print(f"The mean of the numbers you entered is {mean}")
+
+########################
+
+# Create a program that asks the user to enter 5 numbers. Then, tell the user the median number. The definition of a median number is found here.
+
+# Bonus: Make your code work with any size array. This is harder than the problem above, since the definition of median is different when there are an even or odd amount of numbers. If you want, you can use the integer .even? and .odd? methods to help solve this problem.
+
 i = 0
-sum = 0
-mean_list = []
-while i < 5:
-   print("Please enter a number and you will get the average of 5 numbers:")
+median_list = []
+while i < 5: 
+   print("Please enter 5 numbers to get the median:")
    number = int(input())
-   mean_list.append(number)
-   sum += number
+   median_list.append(number)
    i += 1
 
-mean = sum / len(mean_list)
-print(f"The mean of the numbers you entered is {mean}")
+median_list.sort()
+print(f"The median of the  numbers is {median_list[2]}.")
+   
