@@ -163,12 +163,14 @@
 # Note: If you run the code p 9 / 2, it prints 4 even though the result should be 4.5. This is because when dividing integers in Ruby, the result will be an integer. If you want an answer with decimals, at least one of the numbers should be a decimal. If you run the code p 9 / 2.to_f, it prints 4.5 as you would expect. This is because the .to_f converts the integer to a floating point number which contains decimals.
 
 i = 0
+sum = 0
 mean_list = []
 while i < 5:
    print("Please enter a number and you will get the average of 5 numbers:")
    number = int(input())
    mean_list.append(number)
+   sum += number
    i += 1
 
-mean = sum(mean_list) / len(mean_list)
+mean = sum / len(mean_list)
 print(f"The mean of the numbers you entered is {mean}")
