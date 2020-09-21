@@ -90,13 +90,43 @@
 #   puts "BLASTOFF!"
 # end
 
-x = 10
-while x > 0:
-  print(x)
-  x = x - 1
+# x = 10
+# while x > 0:
+#   print(x)
+#   x = x - 1
 
-print("BLASTOFF!")
-  
+# print("BLASTOFF!")
+
+#######################
+  # It's an array of hashes that is used to represent data about different people. Use a loop within a loop to print out the list of everyone's hobbies in ALL CAPS. So the result should look like this:
+
+
+
+people = [
+  {
+    "first_name": "Robert",
+    "last_name": "Garcia", 
+    "hobbies": ["basketball", "chess", "phone tag"]
+   },
+   {
+    "first_name": "Molly",
+    "last_name": "Barker",
+    "hobbies": ["programming", "reading", "jogging"]
+   },
+   {
+    "first_name": "Kelly",
+    "last_name": "Miller",
+    "hobbies": ["cricket", "baking", "stamp collecting"]
+   }
+]
+
+i = 0
+while i < len(people):
+  i_2 = 0
+  while i_2 < len(people[i]["hobbies"]):
+    print(people[i]["hobbies"][i_2].upper())
+    i_2 += 1
+  i += 1
 
 
 

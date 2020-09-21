@@ -274,9 +274,9 @@
 
 # Write a program that accepts user input and prints out the Pig Latin version of that text.
 
-def pig_latin(word):
-   translation = word.strip(word[0]) + word[0] + "ay"
-   return translation
-   
-print(pig_latin("peppermint"))
+# def pig_latin(word):
+#    translation = word.strip(word[0]) + word[0] + "ay"
+#    return translation
+
+# print(pig_latin("peppermint"))
 
