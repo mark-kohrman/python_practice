@@ -132,21 +132,37 @@
 #
 # The rest of your program should create and print out an array that removes all duplicates from the original array.
 
-numbers = [4, 6, 1, 4, 2, 8, 3, 4, 1, 7]
-new_numbers = []
+# numbers = [4, 6, 1, 4, 2, 8, 3, 4, 1, 7]
+# new_numbers = []
 
-numbers = sorted(numbers)
-frequencies = 0
-i = 0
-while i < len(numbers):
-  if numbers[i] != numbers[i - 1]:
-    new_numbers.append(numbers[i])
+# numbers = sorted(numbers)
+# frequencies = 0
+# i = 0
+# while i < len(numbers):
+#   if numbers[i] != numbers[i - 1]:
+#     new_numbers.append(numbers[i])
+#   i += 1
+
+# print(new_numbers)
+
+#####################
+# Fibonacci numbers are numbers that follow the pattern: 0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, etc.
+
+# That is, each number is the sum of the two numbers that precede it.
+
+# Write a program that prints out the first 100 fibonacci numbers. Use a loop!
+
+
+fibonacci = [0, 1]
+i = 1
+while i < 101:
+  new_fibo_number = fibonacci[i] + fibonacci[i - 1]
+  fibonacci.append(new_fibo_number)
+  print(new_fibo_number)
   i += 1
 
-print(new_numbers)
 
-
-
+  
 
 
 
