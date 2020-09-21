@@ -181,14 +181,59 @@
 
 # Bonus: Make your code work with any size array. This is harder than the problem above, since the definition of median is different when there are an even or odd amount of numbers. If you want, you can use the integer .even? and .odd? methods to help solve this problem.
 
+# i = 0
+# median_list = []
+# while i < 5: 
+#    print("Please enter 5 numbers to get the median:")
+#    number = int(input())
+#    median_list.append(number)
+#    i += 1
+
+# median_list.sort()
+# print(f"The median of the  numbers is {median_list[2]}.")
+
+# i = 0
+# median_list = []
+# while True: 
+#    print("Please numbers to get a median and type 'done' to get the median:")
+#    number = input()
+#    if number == "done":
+#       break
+   
+#    median_list.append(int(number))
+
+
+# median_list.sort()
+# middle = (len(median_list) / 2)
+# if(len(median_list) % 2 != 0 ):
+   
+#    # print(median)
+#    index1 = ((len(median) / 2) - 2)
+#    print(index1)
+
+# print(type(median_list[1]))
+# print(f"The median of the  numbers is {median_list[2]}.")
+
+#############
+
+# Have a user enter 5 numbers, and have it so that the program tells you the highest of all those numbers. Catch: Don't use the max method (which does that for you). Use a loop instead.
 i = 0
-median_list = []
-while i < 5: 
-   print("Please enter 5 numbers to get the median:")
+numbers = []
+while i < 5:
+   print("please enter a #:")
    number = int(input())
-   median_list.append(number)
+   numbers.append(number)
    i += 1
 
-median_list.sort()
-print(f"The median of the  numbers is {median_list[2]}.")
-   
+max = numbers[0]
+i_2 = 0
+while i_2 < len(numbers):
+   if numbers[i_2] > max:
+      max = numbers[i_2]
+   i_2 += 1
+
+print(f"Your highest number is {max}.")
+
+
+
+
