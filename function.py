@@ -243,9 +243,18 @@
 # The rest of your program should print out every other letter. That is, the result in your terminal should be:
 
 
-letters = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j"]
+# letters = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j"]
 
+# i = 0
+# while i < len(letters):
+#    print(letters[i])
+#    i += 2
+
+#################
+# The rest of your program should print out the second letter from each inner array. That is, the result in your terminal should be:
+
+letters = [["a", "b"], ["c", "d"], ["e", "f"], ["g", "h"], ["i", "j"]]
 i = 0
 while i < len(letters):
-   print(letters[i])
-   i += 2
+   print(letters[i][1])
+   i += 1
