@@ -217,23 +217,35 @@
 #############
 
 # Have a user enter 5 numbers, and have it so that the program tells you the highest of all those numbers. Catch: Don't use the max method (which does that for you). Use a loop instead.
+# i = 0
+# numbers = []
+# while i < 5:
+#    print("please enter a #:")
+#    number = int(input())
+#    numbers.append(number)
+#    i += 1
+
+# max = numbers[0]
+# i_2 = 0
+# while i_2 < len(numbers):
+#    if numbers[i_2] > max:
+#       max = numbers[i_2]
+#    i_2 += 1
+
+# print(f"Your highest number is {max}.")
+
+
+
+
+# Start your program with this line of code:
+
+# letters = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j"]
+# The rest of your program should print out every other letter. That is, the result in your terminal should be:
+
+
+letters = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j"]
+
 i = 0
-numbers = []
-while i < 5:
-   print("please enter a #:")
-   number = int(input())
-   numbers.append(number)
-   i += 1
-
-max = numbers[0]
-i_2 = 0
-while i_2 < len(numbers):
-   if numbers[i_2] > max:
-      max = numbers[i_2]
-   i_2 += 1
-
-print(f"Your highest number is {max}.")
-
-
-
-
+while i < len(letters):
+   print(letters[i])
+   i += 2
