@@ -102,31 +102,49 @@
 
 
 
-people = [
-  {
-    "first_name": "Robert",
-    "last_name": "Garcia", 
-    "hobbies": ["basketball", "chess", "phone tag"]
-   },
-   {
-    "first_name": "Molly",
-    "last_name": "Barker",
-    "hobbies": ["programming", "reading", "jogging"]
-   },
-   {
-    "first_name": "Kelly",
-    "last_name": "Miller",
-    "hobbies": ["cricket", "baking", "stamp collecting"]
-   }
-]
+# people = [
+#   {
+#     "first_name": "Robert",
+#     "last_name": "Garcia", 
+#     "hobbies": ["basketball", "chess", "phone tag"]
+#    },
+#    {
+#     "first_name": "Molly",
+#     "last_name": "Barker",
+#     "hobbies": ["programming", "reading", "jogging"]
+#    },
+#    {
+#     "first_name": "Kelly",
+#     "last_name": "Miller",
+#     "hobbies": ["cricket", "baking", "stamp collecting"]
+#    }
+# ]
 
+# i = 0
+# while i < len(people):
+#   i_2 = 0
+#   while i_2 < len(people[i]["hobbies"]):
+#     print(people[i]["hobbies"][i_2].upper())
+#     i_2 += 1
+#   i += 1
+
+############
+#
+# The rest of your program should create and print out an array that removes all duplicates from the original array.
+
+numbers = [4, 6, 1, 4, 2, 8, 3, 4, 1, 7]
+new_numbers = []
+
+numbers = sorted(numbers)
+frequencies = 0
 i = 0
-while i < len(people):
-  i_2 = 0
-  while i_2 < len(people[i]["hobbies"]):
-    print(people[i]["hobbies"][i_2].upper())
-    i_2 += 1
+while i < len(numbers):
+  if numbers[i] != numbers[i - 1]:
+    new_numbers.append(numbers[i])
   i += 1
+
+print(new_numbers)
+
 
 
 
