@@ -30,13 +30,38 @@
 # print(is_leap(2400))
 
 ###############
-string = ""
-n = 3
-i = 1
-while i <= n:
-    string = string + str(i) 
-    i = int(i)
-    i+=1
+# string = ""
+# n = 3
+# i = 1
+# while i <= n:
+#     string = string + str(i) 
+#     i = int(i)
+#     i+=1
 
-print(string)
-  
+# print(string)
+########
+
+# Start with this line of code:
+
+# letter_groups = [["a", "b", "z"], ["c", "d"], ["e", "f"], ["g", "h", "i", "j"]]
+# It's a two dimensional array (yay!).
+
+# Write code that will take each of those letters and put them into a brand new one dimensional array. So the resulting array should be:
+
+# ["a", "b", "z", "c", "d", "e", "f", "g", "h", "i", "j"]
+# Your last line of code should use the p command (e.g. p new_array) to make sure that your new array looks right.
+
+
+list1 = [["a", "b", "z"], ["c", "d"], ["e", "f"], ["g", "h", "i", "j"]]
+
+list2 = []
+i = 0
+while i < len(list1):
+  i_2 = 0
+  while i_2 < len(list1[i]):   
+    list2.append(list1[i][i_2])
+    
+    i_2 += 1
+  i += 1
+
+print(list2)
