@@ -262,4 +262,21 @@
 # ###################
 
 
+# Pig Latin is a very sophisticated language in which the each English word is converted as follows: The first letter of each word is removed from the beginning and added to the end. Then, the letters 'ay' are added to the very end of the word.
+
+# For example:
+
+# hello = ellohay
+# pingpong = ingpongpay
+# marmalade = armalademay
+
+# Etcetra.
+
+# Write a program that accepts user input and prints out the Pig Latin version of that text.
+
+def pig_latin(word):
+   translation = word.strip(word[0]) + word[0] + "ay"
+   return translation
+   
+print(pig_latin("peppermint"))
 

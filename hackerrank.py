@@ -52,16 +52,16 @@
 # Your last line of code should use the p command (e.g. p new_array) to make sure that your new array looks right.
 
 
-list1 = [["a", "b", "z"], ["c", "d"], ["e", "f"], ["g", "h", "i", "j"]]
+# list1 = [["a", "b", "z"], ["c", "d"], ["e", "f"], ["g", "h", "i", "j"]]
 
-list2 = []
-i = 0
-while i < len(list1):
-  i_2 = 0
-  while i_2 < len(list1[i]):   
-    list2.append(list1[i][i_2])
+# list2 = []
+# i = 0
+# while i < len(list1):
+#   i_2 = 0
+#   while i_2 < len(list1[i]):   
+#     list2.append(list1[i][i_2])
     
-    i_2 += 1
-  i += 1
+#     i_2 += 1
+#   i += 1
 
-print(list2)
+# print(list2)
