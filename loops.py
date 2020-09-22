@@ -153,14 +153,64 @@
 # Write a program that prints out the first 100 fibonacci numbers. Use a loop!
 
 
-fibonacci = [0, 1]
-i = 1
-while i < 101:
-  new_fibo_number = fibonacci[i] + fibonacci[i - 1]
-  fibonacci.append(new_fibo_number)
-  print(new_fibo_number)
+# fibonacci = [0, 1]
+# i = 1
+# while i < 101:
+#   new_fibo_number = fibonacci[i] + fibonacci[i - 1]
+#   fibonacci.append(new_fibo_number)
+#   print(new_fibo_number)
+#   i += 1
+
+################################
+
+    
+# Have the user enter 10 words, and allow for duplicate words. After the user is done, the program will tell the user which word was entered the most frequently.
+
+# For example, if the user enters:
+
+# apple, banana, orange, pear, apple, pear, apple, squash, apple, pear
+
+# The program will say:
+
+# apple was your most common word
+# (That's because apple appeared in the user's list 4 times, more than any other word.)
+
+# HINT: USE A HASH TO KEEP TRACK OF HOW MANY TIMES EACH WORD APPEARS IN THE LIST.
+
+fruits = []
+i_3 = 0
+while i_3 < 11:
+  print("Please enter a fruit until you are asked to stop:")
+  fruit = input()
+  fruits.append(fruit)
+  i_3 += 1
+
+print(fruits)
+
+frequencies = {}
+i = 0
+while i < len(fruits):
+  key = fruits[i]
+  value = "nil"
+  frequencies[key] = value
   i += 1
 
+i_2 = 0
+max = 0
+while i_2 < len(fruits):
+  key_2 = fruits[i_2]
+  if frequencies[key_2] == "nil":
+    frequencies[key_2] = 1
+  else:
+    frequencies[key_2] += 1
+  
+  if max < frequencies[key_2]:
+    max = frequencies[key_2]
+    max_fruit = key_2
+  i_2 += 1
+
+
+print(f"The most frequent word is {max_fruit}")
 
   
 
