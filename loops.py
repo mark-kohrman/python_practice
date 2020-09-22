@@ -177,40 +177,39 @@
 
 # HINT: USE A HASH TO KEEP TRACK OF HOW MANY TIMES EACH WORD APPEARS IN THE LIST.
 
-fruits = []
-i_3 = 0
-while i_3 < 11:
-  print("Please enter a fruit until you are asked to stop:")
-  fruit = input()
-  fruits.append(fruit)
-  i_3 += 1
+# fruits = []
+# fruit = input()
+# i = 0
+# while i < 11:
+#   print("Please enter a fruit until you are asked to stop:")
+#   i += 1
 
-print(fruits)
+# print(fruits)
 
-frequencies = {}
-i = 0
-while i < len(fruits):
-  key = fruits[i]
-  value = "nil"
-  frequencies[key] = value
-  i += 1
+# frequencies = {}
+# i = 0
+# while i < len(fruits):
+#   key = fruits[i]
+#   value = "nil"
+#   frequencies[key] = value
+#   i += 1
 
-i_2 = 0
-max = 0
-while i_2 < len(fruits):
-  key_2 = fruits[i_2]
-  if frequencies[key_2] == "nil":
-    frequencies[key_2] = 1
-  else:
-    frequencies[key_2] += 1
+# i_2 = 0
+# max = 0
+# while i_2 < len(fruits):
+#   key_2 = fruits[i_2]
+#   if frequencies[key_2] == "nil":
+#     frequencies[key_2] = 1
+#   else:
+#     frequencies[key_2] += 1
   
-  if max < frequencies[key_2]:
-    max = frequencies[key_2]
-    max_fruit = key_2
-  i_2 += 1
+#   if max < frequencies[key_2]:
+#     max = frequencies[key_2]
+#     max_fruit = key_2
+#   i_2 += 1
 
 
-print(f"The most frequent word is {max_fruit}")
+# print(f"The most frequent word is {max_fruit}")
 
   
 
