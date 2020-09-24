@@ -65,3 +65,16 @@
 #   i += 1
 
 # print(list2)
+
+########################
+string = "Joseph MiXon"
+new_string = ""
+i = 0
+while i < len(string):
+  if string[i].islower():
+    new_string = new_string + string[i].upper()
+  else: 
+    new_string = new_string + string[i].lower()
+  i += 1
+
+print(new_string)
