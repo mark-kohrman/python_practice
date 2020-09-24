@@ -67,14 +67,49 @@
 # print(list2)
 
 ########################
-string = "Joseph MiXon"
-new_string = ""
-i = 0
-while i < len(string):
-  if string[i].islower():
-    new_string = new_string + string[i].upper()
-  else: 
-    new_string = new_string + string[i].lower()
-  i += 1
+# string = "Joseph MiXon"
+# new_string = ""
+# i = 0
+# while i < len(string):
+#   if string[i].islower():
+#     new_string = new_string + string[i].upper()
+#   else: 
+#     new_string = new_string + string[i].lower()
+#   i += 1
 
-print(new_string)
+# print(new_string)
+
+#########
+
+    # n = int(raw_input())
+    # student_marks = {}
+    # for _ in range(n):
+    #     line = raw_input().split()
+    #     name, scores = line[0], line[1:]
+    #     scores = map(float, scores)
+    #     student_marks[name] = scores
+    # query_name = raw_input()
+    #     student_marks[query_name] = (scores[0] + scores[1] + scores[2]) / 3
+    #     print()
+
+##############
+# Task
+# Given an integer, , perform the following conditional actions:
+
+# If  is odd, print Weird
+# If  is even and in the inclusive range of  to , print Not Weird
+# If  is even and in the inclusive range of  to , print Weird
+# If  is even and greater than , print Not Weird
+
+def weird_or_not(n):
+  if n % 2 != 0:
+    print("Weird")
+  elif n % 2 == 0 and n >= 2 and n <= 5:
+    print("Not Weird")
+  elif n % 2 == 0 and n >= 6 and n <= 20:
+    print("Weird")
+  else:
+    print("Not Weird")
+  
+
+weird_or_not(31)
