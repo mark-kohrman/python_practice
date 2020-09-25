@@ -126,7 +126,19 @@
 
 # The first line contains a string, .
 # The second line contains the width, .
-string = "abcdefghijklmonopqrstuvwxyz"
-max_width = 4
-for i in range(0, len(string), max_width):
-    print(string[i:i+max_width])
+# string = "abcdefghijklmonopqrstuvwxyz"
+# max_width = 4
+# for i in range(0, len(string), max_width):
+#     print(string[i:i+max_width])
+#######
+# Task
+# You are given a string. Split the string on a " " (space) delimiter and join using a - hyphen.
+
+def split_and_join(line):
+    line = "my name is what"
+    result = line.split(" ")
+    result = "-".join(result)
+    print(result)
+
+
+split_and_join("my name is what")
