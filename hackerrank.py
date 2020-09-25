@@ -135,10 +135,9 @@
 # You are given a string. Split the string on a " " (space) delimiter and join using a - hyphen.
 
 def split_and_join(line):
-    line = "my name is what"
     result = line.split(" ")
     result = "-".join(result)
     print(result)
 
 
-split_and_join("my name is what")
+split_and_join("my name hey what")
