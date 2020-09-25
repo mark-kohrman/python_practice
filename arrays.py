@@ -181,16 +181,22 @@
 #     print(names[i])
 #     i += 1
 # 7. Create an array to store 2 strings. Then add one string to the array and print the array on one line.
-array = ["make", "money"]
-array.append("buddy")
-print(array)
-# 8. Create an array to store 5 numbers. Then change the first number to 10 times its original value and print the array on one line.
-array = [12, 42, 123, 90, 3]
-array[0] = array[0] * 10
-print(array)
+# array = ["make", "money"]
+# array.append("buddy")
+# print(array)
+# # 8. Create an array to store 5 numbers. Then change the first number to 10 times its original value and print the array on one line.
+# array = [12, 42, 123, 90, 3]
+# array[0] = array[0] * 10
+# print(array)
 # 9. Create an array to store 2 numbers. Then print out each number on separate lines with a while loop.
-
+numbers = [3, 99]
+i = 0
+while i < len(numbers):
+    print(numbers[i])
+    i += 1
 # 10. Create an array to store names of 3 different countries. Then add one more country and print the array one line.
-
+countries = ["Senegal", "Canada", "Japan"]
+countries.append("Vietnam")
+print(countries)
 
 # SOLUTIONS: https://gist.github.com/peterxjang/7095a2b19e1da2cc18d4a0dcd66cb8f1
