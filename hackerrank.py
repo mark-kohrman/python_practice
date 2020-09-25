@@ -113,7 +113,20 @@
 
 
 # weird_or_not(31)
-a = "Mark"
-b = "Kohrman"
+# a = "Mark"
+# b = "Kohrman"
 
-print(f"Hello {a} {b}! You just delved into python.")
+# print(f"Hello {a} {b}! You just delved into python.")
+
+################
+# You are given a string  and width .
+# Your task is to wrap the string into a paragraph of width .
+
+# Input Format
+
+# The first line contains a string, .
+# The second line contains the width, .
+string = "abcdefghijklmonopqrstuvwxyz"
+max_width = 4
+for i in range(0, len(string), max_width):
+    print(string[i:i+max_width])
