@@ -148,20 +148,28 @@
 # print(new_numbers)
 
 # 1. Create an array to store 3 words. Then add two more words to the array and print the array on one line.
-a = ["hey", "ho", "lets"]
-a.append("go")
-a.append("hey")
+# a = ["hey", "ho", "lets"]
+# a.append("go")
+# a.append("hey")
 
-print(a)
+# print(a)
 
-# 2. Create an array to store 4 letters. Then change the second letter to a number and print the array on one line.
-a = ["m", "n", "a", "p"]
-a[1] = 4
-print(a)
+# # 2. Create an array to store 4 letters. Then change the second letter to a number and print the array on one line.
+# a = ["m", "n", "a", "p"]
+# a[1] = 4
+# print(a)
 # 3. Create an array to store 5 numbers. Then print out each number on separate lines with a while loop.
+numbers = [45, 12, 99, 123, 985]
+i = 0
+while i < len(numbers):
+    print(numbers[i])
+    i += 1
+
 
 # 4. Create an array to store 1 number. Then add three more numbers to the array and print the array on one line.
-
+numbers = [4]
+numbers.extend([43, 12, 2])
+print(numbers)
 # 5. Create an array to store 3 strings with lower case letters. Then change the third string to have all capital letters and print the array on one line.
 
 # 6. Create an array to store 3 names. Then print out each name on separate lines with a while loop.
