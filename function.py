@@ -313,15 +313,56 @@ print(squared(12))
 
 # 5. Write a function that takes in a string and returns the first letter of the string. Then run the function and print the result.
 
+
+def first_letter(string):
+    return string[0]
+
+
+print(first_letter("pears are a nice fruit"))
+
 # 6. Write a function that takes in three strings and returns a string that combines all three strings with spaces in between. Then run the function and print the result.
+
+
+def combine_strings(string1, string2, string3):
+    return f"{string1} {string2} {string3}"
+
+
+print(combine_strings("hey", "there", "neighbors"))
 
 # 7. Write a function that takes in a number and returns the number as a string. Then run the function and print the result.
 
+
+def to_string(integer):
+    return str(integer)
+
+
+print(to_string(45))
+
 # 8. Write a function that takes in a string and returns the string repeated 5 times. Then run the function and print the result.
 
+
+def times_5(string):
+    return string * 5
+
+
+print(times_5("hello "))
 # 9. Write a function that takes in 3 numbers and returns the average (the sum divided by 3.0). Then run the function and print the result.
 
+
+def average(integer1, integer2, integer3):
+    return (integer1 + integer2 + integer3) / 3
+
+
+print(average(5, 10, 15))
+
 # 10. Write a function that takes in a number and returns the number times 10 plus 30. Then run the function and print the result.
+
+
+def times_10_plus_30(integer):
+    return integer * 10 + 30
+
+
+print(times_10_plus_30(12))
 
 
 # SOLUTIONS: https://gist.github.com/peterxjang/6a26d3c698c651dd6e9ccb168d32648c
