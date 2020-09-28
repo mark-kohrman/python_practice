@@ -189,14 +189,105 @@
 # array[0] = array[0] * 10
 # print(array)
 # 9. Create an array to store 2 numbers. Then print out each number on separate lines with a while loop.
-numbers = [3, 99]
-i = 0
-while i < len(numbers):
-    print(numbers[i])
-    i += 1
-# 10. Create an array to store names of 3 different countries. Then add one more country and print the array one line.
-countries = ["Senegal", "Canada", "Japan"]
-countries.append("Vietnam")
-print(countries)
+# numbers = [3, 99]
+# i = 0
+# while i < len(numbers):
+#     print(numbers[i])
+#     i += 1
+# # 10. Create an array to store names of 3 different countries. Then add one more country and print the array one line.
+# countries = ["Senegal", "Canada", "Japan"]
+# countries.append("Vietnam")
+# print(countries)
 
 # SOLUTIONS: https://gist.github.com/peterxjang/7095a2b19e1da2cc18d4a0dcd66cb8f1
+
+#  1. Start with an array of numbers and create a new array with each number times 3.
+#     For example, [1, 2, 3] becomes [3, 6, 9].
+numbers = [1, 2, 3]
+new_array = []
+for number in numbers:
+    new_array.append(number * 3)
+
+print(new_array)
+
+#  2. Start with an array of strings and create a new array with each string upcased.
+#     For example, ["hello", "goodbye"] becomes ["HELLO", "GOODBYE"].
+
+strings = ["hello", "goodbye"]
+capitalize = []
+for string in strings:
+    capitalize.append(string.upper())
+
+print(capitalize)
+
+#  3. Start with an array of hashes and create a new array of string values from each hash's :name key.
+#     For example, [{name: "Alice", age: 27}, {name: "Blane", age: 16}] becomes ["Alice", "Blane"].
+peeps = [{"name": "Alice", "age": 27}, {"name": "Blane", "age": 16}]
+names = []
+for peep in peeps:
+    names.append(peep["name"])
+
+print(names)
+#  4. Start with an array of numbers and create a new array with each number plus 7.
+#     For example, [1, 2, 3] becomes [8, 9, 10].
+numbs = [1, 2, 3]
+new_numbs = []
+for numb in numbs:
+    new_numbs.append(numb + 7)
+
+print(new_numbs)
+
+#  5. Start with an array of strings and create a new array with each string's length.
+#     For example, ["hello", "goodbye"] becomes [5, 7].
+stringys = ["hello0000000", "goodbye"]
+lengths = []
+for stringy in stringys:
+    lengths.append(len(stringy))
+
+print(lengths)
+#  6. Start with an array of hashes and create a new array of number values from each hash's :age key.
+#     For example, [{name: "Alice", age: 27}, {name: "Blane", age: 16}] becomes [27, 16].
+persons = [{"name": "Alice", "age": 27}, {"name": "Blane", "age": 16}]
+ages = []
+for person in persons:
+    ages.append(person["age"])
+
+print(ages)
+
+#  7. Start with an array of numbers and create a new array with each number divided by 2.
+#     For example, [1, 2, 3] becomes [0.5, 1.0, 1.5].
+integers = [34, 98, 45]
+divided = []
+for integer in integers:
+    divided.append(integer/2)
+
+print(divided)
+#  8. Start with an array of strings and create a new array with each string's first letter only.
+#     For example, ["hello", "goodbye"] becomes ["h", "g"].
+stringos = ["hello", "goodbye"]
+first_letters = []
+for stringo in stringos:
+    first_letters.append(stringo[0])
+
+print(first_letters)
+# 9.  Start with an array of hashes and create a new array of number values from each hash's :age key times 2.
+#     For example, [{name: "Alice", age: 27}, {name: "Blane", age: 16}] becomes [54, 32].
+humans = [{"name": "Alice", "age": 27}, {"name": "Blane", "age": 16}]
+ages_multiplied = []
+for human in humans:
+    ages_multiplied.append(human["age"] * 2)
+
+print(ages_multiplied)
+
+# 10. Start with an array of numbers and create a new array with each number converted into a string.
+#     For example, [1, 2, 3] becomes ["1", "2", "3"].
+integers = [2, 88, 99]
+string_ints = []
+for integer in integers:
+    string_ints.append(str(integer))
+
+print(string_ints)
+
+# SOLUTIONS (using while loop): https://gist.github.com/peterxjang/b9ac4390aad2301a2238efc95c904f3d
+# SOLUTIONS (using .each shortcut): https://gist.github.com/peterxjang/66598fd7cdbc67fe663624e217cebbaf
+# SOLUTIONS (using .map shortcut): https://gist.github.com/peterxjang/23a8f8a51601e4288ba3a8aa6d1f1c98
