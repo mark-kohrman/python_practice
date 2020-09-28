@@ -37,7 +37,7 @@
 #          lesser_array.append(array[i])
 #       i += 1
 #    print(lesser_array)
-      
+
 
 # select_less_than_five([-3, 44, 2, 1, -6, 55, 9, -1])
 ###################
@@ -92,7 +92,7 @@
 
 # Exercise:
 
-    
+
 # Create a fortune teller which tells the user a fortune based on the user's favorite number. Give at least 3 possible outcomes. So along these lines, for example: If the user's favorite number is below 50, give fortune X. If the user's favorite number is between 50 and 100, give fortune Y. If the user's favorite number is above 100, give fortune Z.
 
 # print("Enter your favorite number to get your fortune:")
@@ -105,7 +105,7 @@
 # else:
 #    print("You will have a monkey as a pet")
 
-################## MAD LIBS
+# MAD LIBS
 
 # Write a program that asks the user for 5 words and creates a story out of it. For example, your program will have some sort of story template like this:
 
@@ -148,10 +148,9 @@
 ##########################
 
 
-
 # Exercise:
 
-    
+
 # Create a program that asks the user to enter 5 numbers. Then, tell the user the mean average of all the numbers.
 
 # The mean average is defined as the sum of all the numbers divided by the count of how many numbers there are. For example, if the user enters:
@@ -183,7 +182,7 @@
 
 # i = 0
 # median_list = []
-# while i < 5: 
+# while i < 5:
 #    print("Please enter 5 numbers to get the median:")
 #    number = int(input())
 #    median_list.append(number)
@@ -194,19 +193,19 @@
 
 # i = 0
 # median_list = []
-# while True: 
+# while True:
 #    print("Please numbers to get a median and type 'done' to get the median:")
 #    number = input()
 #    if number == "done":
 #       break
-   
+
 #    median_list.append(int(number))
 
 
 # median_list.sort()
 # middle = (len(median_list) / 2)
 # if(len(median_list) % 2 != 0 ):
-   
+
 #    # print(median)
 #    index1 = ((len(median) / 2) - 2)
 #    print(index1)
@@ -233,8 +232,6 @@
 #    i_2 += 1
 
 # print(f"Your highest number is {max}.")
-
-
 
 
 # Start your program with this line of code:
@@ -280,3 +277,38 @@
 
 # print(pig_latin("peppermint"))
 
+# 1. Write a function that takes in a number and returns the number times two. Then run the function and print the result.
+
+def times_two(number):
+    return number * 2
+
+
+print(times_two(9))
+
+# 2. Write a function that takes in a string and returns the string with all capital letters. Then run the function and print the result.
+
+
+def capitalize(word):
+    return word.upper()
+
+
+print(capitalize("what up"))
+
+# 3. Write a function that takes in two numbers and returns the first number subtracted by the second. Then run the function and print the result.
+
+# 4. Write a function that takes in a number and returns the number times itself. Then run the function and print the result.
+
+# 5. Write a function that takes in a string and returns the first letter of the string. Then run the function and print the result.
+
+# 6. Write a function that takes in three strings and returns a string that combines all three strings with spaces in between. Then run the function and print the result.
+
+# 7. Write a function that takes in a number and returns the number as a string. Then run the function and print the result.
+
+# 8. Write a function that takes in a string and returns the string repeated 5 times. Then run the function and print the result.
+
+# 9. Write a function that takes in 3 numbers and returns the average (the sum divided by 3.0). Then run the function and print the result.
+
+# 10. Write a function that takes in a number and returns the number times 10 plus 30. Then run the function and print the result.
+
+
+# SOLUTIONS: https://gist.github.com/peterxjang/6a26d3c698c651dd6e9ccb168d32648c
