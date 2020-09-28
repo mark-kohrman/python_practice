@@ -99,17 +99,23 @@
 # menu["ice cream"] = 11
 # print(menu)
 # 4. Make a hash to store a book's title, author, number of pages, and language. Then print each attribute on separate lines.
-book = {"author": "John Grisham", "title": "Murder Story Scary",
-        "page_count": 900, "language": "Spanish"}
-print(book["author"])
-print(book["title"])
-print(book["page_count"])
-print(book["language"])
+# book = {"author": "John Grisham", "title": "Murder Story Scary",
+#         "page_count": 900, "language": "Spanish"}
+# print(book["author"])
+# print(book["title"])
+# print(book["page_count"])
+# print(book["language"])
 
 # 5. Make an array of hashes to store the title and author for 3 different books. Then print out the third book's author.
+books = [{"author": "John Grisham", "title": "Murder Story Scary",
+          }, {"author": "Joseph Campbell", "title": "The Hero's Journey"}, {"author": "Fun McFungi", "title": "Fun Stuff"}]
+print(books[2]["author"])
 
 # 6. Make a hash to store 3 different states and their captitals. Then add a new state and capital and print the hash to see the result.
-
+states = {"illinois": "Springfield",
+          "Ohio": "Columbus", "Vermont": "Montpelier"}
+states["Wisconsin"] = "Madison"
+print(states)
 # 7. Make a hash to store a laptop's brand, model, and year. Then print each attribute on separate lines.
 
 # 8. Make an array of hashes to store the brand and model for 3 different laptops. Then print out the second laptop's model.
