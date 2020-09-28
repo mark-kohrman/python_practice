@@ -296,7 +296,20 @@ print(capitalize("what up"))
 
 # 3. Write a function that takes in two numbers and returns the first number subtracted by the second. Then run the function and print the result.
 
+
+def difference(number1, number2):
+    return number1 - number2
+
+
+print(difference(39,  2))
 # 4. Write a function that takes in a number and returns the number times itself. Then run the function and print the result.
+
+
+def squared(number):
+    return number * number
+
+
+print(squared(12))
 
 # 5. Write a function that takes in a string and returns the first letter of the string. Then run the function and print the result.
 
