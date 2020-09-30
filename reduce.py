@@ -61,15 +61,43 @@ print(minimum_price)
 # print(minimum_price)
 #  7. Start with an array of numbers and compute product of all the numbers.
 #     For example, [5, 10, 8, 3] becomes 1200.
+numbers = [5, 10, 8, 3]
+product = reduce((lambda a, b: a * b), numbers)
+print(product)
 
 #  8. Start with an array of strings and combine them all into a single string, separated by dashes.
 #     For example, ["volleyball", "basketball", "badminton"] becomes "-volleyball-basketball-badminton-".
+strings = ["volleyball", "basketball", "badminton"]
+dashed_strings = "-"
+for string in strings:
+    dashed_strings += f"{string}-"
+
+print(dashed_strings)
 
 #  9. Start with an array of hashes and find the hash with the shortest name (from the :name key).
 #     For example, [{name: "chair", price: 100}, {name: "pencil", price: 1}, {name: "book", price: 4}] becomes {name: "book", price: 4}.
 
+things = [{"name": "chair", "price": 100}, {
+    "name": "pencil", "price": 1}, {"name": "book", "price": 4}]
+shortest_name = things[0]
+i = 0
+while i < len(things):
+    if len(things[i]["name"]) < len(shortest_name["name"]):
+        shortest_name = things[i]
+    i += 1
+
+print(shortest_name)
+
+
 # 10. Start with an array of numbers and compute the maximum number.
 #     For example, [5, 10, 8, 3] becomes 10.
+numbers = [5, 10, 8, 2]
+max = numbers[0]
+for number in numbers:
+    if number > max:
+        max = number
+
+print(max)
 
 
 # SOLUTIONS (using while loop): https://gist.github.com/peterxjang/376c8931a48549889eb3c9bc091e9f43
