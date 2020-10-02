@@ -27,7 +27,29 @@ while i < len(items):
 print(item_hash)
 
 #  3. Convert a string into a hash with keys for each letter in the string and values for the number of times the letter appears in the string.
-#     For example, "bookkeeper" becomes {"b" => 1, "o" => 2, "k" => 2, "e" => 3, "p" => 1, "r" => 1}.
+# #     For example, "bookkeeper" becomes {"b" => 1, "o" => 2, "k" => 2, "e" => 3, "p" => 1, "r" => 1}.
+
+word = "bookkeeper"
+letters = {}
+i = 0
+value = 0
+while i < len(word):
+    key = word[i]
+    value += 1
+    letters[key] = None
+    i += 1
+
+i_2 = 0
+while i_2 < len(word):
+    key = word[i_2]
+    if letters[key] == None:
+        letters[key] = 1
+    else:
+        letters[key] += 1
+    i_2 += 1
+
+print(letters)
+
 
 #  4. Convert a hash into an array of arrays.
 #     For example, {"chair" => 100, "book" => 14} becomes [["chair", 100], ["book", 14]].
