@@ -1,58 +1,68 @@
-#  1. Convert an array of arrays into a hash.
-#     For example, [[1, 3], [8, 9], [2, 16]] becomes {1 => 3, 8 => 9, 2 => 16}.
-arrays = [[1, 3], [8, 9], [2, 16]]
-dictionary = {}
-i = 0
-while i < len(arrays):
-    i_2 = 0
-    while i_2 < len(arrays[i]):
-        dictionary[arrays[i][i_2]] = arrays[i][i_2 + 1]
-        i_2 += 2
-    i += 1
+# #  1. Convert an array of arrays into a hash.
+# #     For example, [[1, 3], [8, 9], [2, 16]] becomes {1 => 3, 8 => 9, 2 => 16}.
+# arrays = [[1, 3], [8, 9], [2, 16]]
+# dictionary = {}
+# i = 0
+# while i < len(arrays):
+#     i_2 = 0
+#     while i_2 < len(arrays[i]):
+#         dictionary[arrays[i][i_2]] = arrays[i][i_2 + 1]
+#         i_2 += 2
+#     i += 1
 
-print(dictionary)
+# print(dictionary)
 
-#  2. Convert an array of hashes into a hash using the :id key from the array's hashes as the keys in the new hash.
-#     For example, [{id: 1, color: "blue", price: 32}, {id: 2, color: "red", price: 12}] becomes {1 => {id: 1, color: "blue", price: 32}, 2 => {id: 2, color: "red", price: 12}}.
-items = [{"id": 1, "color": "blue", "price": 32},
-         {"id": 2, "color": "red", "price": 12}]
-item_hash = {}
-i = 0
-while i < len(items):
-    key = items[i]["id"]
-    value = items[i]
-    item_hash[key] = value
-    i += 1
+# #  2. Convert an array of hashes into a hash using the :id key from the array's hashes as the keys in the new hash.
+# #     For example, [{id: 1, color: "blue", price: 32}, {id: 2, color: "red", price: 12}] becomes {1 => {id: 1, color: "blue", price: 32}, 2 => {id: 2, color: "red", price: 12}}.
+# items = [{"id": 1, "color": "blue", "price": 32},
+#          {"id": 2, "color": "red", "price": 12}]
+# item_hash = {}
+# i = 0
+# while i < len(items):
+#     key = items[i]["id"]
+#     value = items[i]
+#     item_hash[key] = value
+#     i += 1
 
-print(item_hash)
+# print(item_hash)
 
 #  3. Convert a string into a hash with keys for each letter in the string and values for the number of times the letter appears in the string.
 # #     For example, "bookkeeper" becomes {"b" => 1, "o" => 2, "k" => 2, "e" => 3, "p" => 1, "r" => 1}.
 
-word = "bookkeeper"
-letters = {}
-i = 0
-value = 0
-while i < len(word):
-    key = word[i]
-    value += 1
-    letters[key] = None
-    i += 1
+# word = "bookkeeper"
+# letters = {}
+# i = 0
+# while i < len(word):
+#     key = word[i]
+#     if letters[key] == None:
+#         letters[key] = 0
 
-i_2 = 0
-while i_2 < len(word):
-    key = word[i_2]
-    if letters[key] == None:
-        letters[key] = 1
-    else:
-        letters[key] += 1
-    i_2 += 1
+#     letters[key] += 1
+#     i += 1
 
-print(letters)
+# i_2 = 0
+# while i_2 < len(word):
+#     key = word[i_2]
+#     if letters[key] == None:
+#         letters[key] = 1
+#     else:
+#         letters[key] += 1
+#     i_2 += 1
+
+# print(letters)
 
 
 #  4. Convert a hash into an array of arrays.
 #     For example, {"chair" => 100, "book" => 14} becomes [["chair", 100], ["book", 14]].
+
+stuff = {"chair": 100, "book": 14}
+items_list = []
+i = 0
+for key, value in stuff.items():
+    items_list.append([key, value])
+
+print(items_list)
+
 
 #  5. Convert a hash into an array of hashes using the keys from each hash as the :id key in each of the array's hashes.
 #     For example, {321 => {name: "Alice", age: 31}, 322 => {name: "Maria", age: 27}} becomes [{id: 321, name: "Alice", age: 31}, {id: 322, name: "Maria", age: 27}].
