@@ -55,13 +55,13 @@
 #  4. Convert a hash into an array of arrays.
 #     For example, {"chair" => 100, "book" => 14} becomes [["chair", 100], ["book", 14]].
 
-stuff = {"chair": 100, "book": 14}
-items_list = []
-i = 0
-for key, value in stuff.items():
-    items_list.append([key, value])
+# stuff = {"chair": 100, "book": 14}
+# items_list = []
+# i = 0
+# for key, value in stuff.items():
+#     items_list.append([key, value])
 
-print(items_list)
+# print(items_list)
 
 
 #  5. Convert a hash into an array of hashes using the keys from each hash as the :id key in each of the array's hashes.
