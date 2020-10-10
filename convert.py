@@ -89,7 +89,22 @@ combined_hash = {}
 
 #  9. Convert an array of hashes into a hash of arrays, using the author as keys and the titles as values.
 #     For example, [{author: "Jeff Smith", title: "Bone"}, {author: "George Orwell", title: "1984"}, {author: "Jeff Smith", title: "RASL"}] becomes {"Jeff Smith" => ["Bone", "RASL"], "George Orwell" => ["1984"]}.
+books = [{"author": "Jeff Smith", "title": "Bone"}, {
+    "author": "George Orwell", "title": "1984"}, {"author": "Jeff Smith", "title": "RASL"}]
+book_dict = {}
+book_list = []
+i = 0
+while i < len(books):
+    book = books[i]
+    key = book["author"]
+    value = book["title"]
+    if book_dict[key] == None:
+        book_dict[key] = []
 
+    book_dict[key].append(value)
+    i += 1
+
+print(book_dict)
 # 10. Given a hash, create a new hash that has the keys and values switched.
 #     For example, {"a" => 1, "b" => 2, "c" => 3} becomes {1 => "a", 2 => "b", 3 => "c"}.
 letters = {"a": 1, "b": 2, "c": 3}
@@ -97,7 +112,7 @@ switched_letters = {}
 for key, value in letters.items():
     switched_letters[value] = key
 
-print(switched_letters)
+# print(switched_letters)
 
 
 # SOLUTIONS: https://gist.github.com/peterxjang/216a7a6e8411ee5c05118e78022f2bc7
