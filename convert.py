@@ -98,13 +98,27 @@ while i < len(books):
     book = books[i]
     key = book["author"]
     value = book["title"]
+    book_dict[key] = None
+    i += 1
+
+i = 0
+while i < len(books):
+    book = books[i]
+    key = book["author"]
+    value = book["title"]
     if book_dict[key] == None:
         book_dict[key] = []
-
     book_dict[key].append(value)
     i += 1
 
+
 print(book_dict)
+# print(book_dict)
+# hello = None
+# dictionary = {}
+# dictionary["key"] = None
+# if hello is None:
+#     print(dictionary)
 # 10. Given a hash, create a new hash that has the keys and values switched.
 #     For example, {"a" => 1, "b" => 2, "c" => 3} becomes {1 => "a", 2 => "b", 3 => "c"}.
 letters = {"a": 1, "b": 2, "c": 3}
